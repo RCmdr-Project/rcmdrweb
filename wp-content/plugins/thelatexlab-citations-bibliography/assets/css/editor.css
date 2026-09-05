@@ -1,0 +1,137 @@
+/* Academic Citations & Bibliography: editor + modal styles.
+   No em-dashes or en-dashes in this codebase. */
+
+.thelatexlab-modal-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 8vh 16px 16px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.thelatexlab-modal {
+	width: 560px;
+	max-width: 100%;
+	max-height: 80vh;
+	overflow: auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+}
+
+.thelatexlab-modal__header {
+	padding: 16px 20px 0;
+}
+
+.thelatexlab-modal__title {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.thelatexlab-modal__tabs {
+	display: flex;
+	gap: 4px;
+	padding: 12px 20px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.thelatexlab-modal__tab {
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	padding: 8px 10px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.thelatexlab-modal__tab.is-active {
+	color: #111;
+	border-bottom-color: #2271b1;
+	font-weight: 600;
+}
+
+.thelatexlab-modal__bodies {
+	padding: 16px 20px;
+}
+
+.thelatexlab-modal__status {
+	padding: 0 20px;
+	min-height: 1.2em;
+	font-size: 0.85rem;
+	color: #555;
+}
+
+.thelatexlab-modal__status.is-error {
+	color: #b32d2e;
+}
+
+.thelatexlab-modal__footer {
+	padding: 12px 20px 18px;
+	text-align: right;
+}
+
+.thelatexlab-row {
+	display: flex;
+	gap: 8px;
+}
+
+.thelatexlab-input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px 10px;
+}
+
+.thelatexlab-field {
+	margin-bottom: 10px;
+}
+
+.thelatexlab-preview {
+	margin-top: 14px;
+}
+
+.thelatexlab-preview__entry {
+	padding: 10px 12px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.thelatexlab-results {
+	list-style: none;
+	margin: 12px 0 0;
+	padding: 0;
+	max-height: 320px;
+	overflow: auto;
+}
+
+.thelatexlab-results__item {
+	padding: 10px 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 6px;
+	cursor: pointer;
+	line-height: 1.4;
+}
+
+.thelatexlab-results__item:hover {
+	background: #f0f6fc;
+	border-color: #2271b1;
+}
+
+.thelatexlab-results__empty {
+	color: #777;
+	padding: 8px 0;
+}
+
+.thelatexlab-editor-placeholder {
+	padding: 16px;
+	border: 1px dashed #c3c4c7;
+	border-radius: 4px;
+	background: #f6f7f7;
+	color: #50575e;
+}

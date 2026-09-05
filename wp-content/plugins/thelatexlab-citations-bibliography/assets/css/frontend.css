@@ -1,0 +1,84 @@
+/* Academic Citations & Bibliography: frontend styles.
+   Intentionally minimal and theme-friendly: inherits typography, only
+   sets structure. No em-dashes or en-dashes in this codebase. */
+
+.scholar-cite a {
+	text-decoration: none;
+}
+
+.scholar-bibliography {
+	margin-top: 2rem;
+}
+
+.scholar-bibliography__heading {
+	margin-bottom: 0.75rem;
+}
+
+.scholar-bibliography__list {
+	margin: 0;
+	padding-left: 1.5rem;
+}
+
+.scholar-bibliography__list > li,
+.scholar-bibliography__item {
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+.scholar-bibliography__credit {
+	margin-top: 1rem;
+	font-size: 0.85em;
+	opacity: 0.75;
+}
+
+.scholar-publications__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.scholar-publications__item {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	line-height: 1.5;
+}
+
+.scholar-copy {
+	display: inline-flex;
+	gap: 6px;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.scholar-copy__btn {
+	font-size: 0.72em;
+	line-height: 1;
+	padding: 3px 7px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	background: transparent;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.scholar-copy__btn:hover {
+	opacity: 1;
+}
+
+/* Mobile-friendly reference popover (tap, not hover-only). */
+.scholar-popover {
+	position: absolute;
+	z-index: 50;
+	max-width: 320px;
+	padding: 0.75rem 1rem;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+	font-size: 0.9em;
+	line-height: 1.45;
+}
+
+.scholar-popover[hidden] {
+	display: none;
+}
